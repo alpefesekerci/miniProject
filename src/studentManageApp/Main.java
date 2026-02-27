@@ -9,7 +9,29 @@ public class Main {
         for (int not : ogrenciNotlari) {
             toplam += not;}
         return toplam / ogrenciNotlari.length;}
-    
+
+    public static int enYuksekNotuBul(int[] ogrenciNotlari){
+        int enYuksek = ogrenciNotlari[0];
+        for (int not : ogrenciNotlari){
+            if (not > enYuksek){
+                enYuksek = not;
+            }
+        }
+        return enYuksek;}
+
+    public static void gecenleriListele(String[] isimler, int[] notlar){
+        System.out.println("\n---GEÇEN ÖĞRENCİLER---");
+        boolean gecenVarMi = false;
+        for (int i = 0; i < notlar.length; i++){
+            if (notlar[i] >= 50){
+                System.out.println(isimler[i] + "-> NOT" + notlar[i]);
+                gecenVarMi = true;
+            }
+        }
+        if (!gecenVarMi){
+            System.out.println("Bu Dersi Geçen Öğrenci Yok.");
+        }
+    }
 
 
 
@@ -56,9 +78,11 @@ public class Main {
                     System.out.println("Ortalama Hesaplanıyor...");
                     break;
                 case 2 :
+                    int max = enYuksekNotuBul(notlar);
                     System.out.println("En Yüksek Not Aranıyor...");
                     break;
                 case 3 :
+                    gecenleriListele(isimler,notlar);
                     System.out.println("Geçenler Listeleniyor...");
                     break;
                 case 0 :
