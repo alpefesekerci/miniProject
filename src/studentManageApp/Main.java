@@ -36,15 +36,14 @@ public class Main {
 
 
     static void main() {
-
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Kaç Öğrenci Gireceksiniz? ");
         int ogrenciSayisi = scanner.nextInt();
         scanner.nextLine();
 
-        String isimler[] = new String[ogrenciSayisi];
-        int notlar[] = new int[ogrenciSayisi];
+        String[] isimler = new String[ogrenciSayisi];
+        int[] notlar = new int[ogrenciSayisi];
 
         for (int i = 0; i < ogrenciSayisi; i++){
             System.out.println((i+1) + ". öğrencinin adını giriniz: ");
@@ -93,6 +92,10 @@ public class Main {
                     break;
                 default:
                     System.out.println("Geçersiz İşlem! Lütfen Geçerli Bir Seçim Yapınız.");
+            }
+            if (devamEt){
+                System.out.println("\nAna Menüye Dönmek İçin ENTER tuşuna basınız...");
+                scanner.nextLine();
             }
         }
     }
