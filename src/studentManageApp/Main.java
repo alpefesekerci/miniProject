@@ -23,7 +23,22 @@ public class Main {
             scanner.nextLine();
         }
 
-        System.out.println("\nVeri Girişi Tamamlandı!");
+        System.out.println("\nVeri Girişi Tamamlandı");
+
+        boolean devamEt = true;
+
+        while (devamEt){
+
+            System.out.println("\n--- İŞLEM MENÜSÜ ---");
+            System.out.println("1 - Sınıf Ortalamasını Hesapla");
+            System.out.println("2 - En Yüksek Notu Göster");
+            System.out.println("3 - Geçen Öğrencileri Listele");
+            System.out.println("0 - Çıkış Yap");
+            System.out.print("Seçiminiz: ");
+
+            int secim = scanner.nextInt();
+            scanner.nextLine();
+        }
 
 
 
