@@ -38,7 +38,30 @@ public class Main {
 
             int secim = scanner.nextInt();
             scanner.nextLine();
+
+            switch (secim){
+
+                case 1 :
+                    System.out.println("Ortalama Hesaplanıyor...");
+                    break;
+                case 2 :
+                    System.out.println("En Yüksek Not Aranıyor...");
+                    break;
+                case 3 :
+                    System.out.println("Geçenler Listeleniyor...");
+                    break;
+                case 0 :
+                    System.out.println("Programdan Çıkılıyor!");
+                    devamEt = false;
+                    break;
+                default:
+                    System.out.println("Geçersiz İşlem! Lütfen Geçerli Bir Seçim Yapınız.");
+            }
         }
+
+
+
+
 
 
 
