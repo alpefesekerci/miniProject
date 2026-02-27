@@ -74,12 +74,14 @@ public class Main {
             switch (secim){
 
                 case 1 :
-                    double ortalama = ortalamaHesapla(notlar);
                     System.out.println("Ortalama Hesaplanıyor...");
+                    double ortalama = ortalamaHesapla(notlar);
+                    System.out.println("Sınıfın Ortalaması: " + ortalama);
                     break;
                 case 2 :
-                    int max = enYuksekNotuBul(notlar);
                     System.out.println("En Yüksek Not Aranıyor...");
+                    int max = enYuksekNotuBul(notlar);
+                    System.out.println("Sınıftaki En Yüksek Not: " + max);
                     break;
                 case 3 :
                     gecenleriListele(isimler,notlar);
