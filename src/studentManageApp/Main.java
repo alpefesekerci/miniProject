@@ -9,7 +9,12 @@ public class Main {
         int ogrenciSayisi = scanner.nextInt();
         scanner.nextLine();
 
+        String isimler[] = new String[ogrenciSayisi];
+        int notlar[] = new int[ogrenciSayisi];
+
         
+
+
 
 
 
