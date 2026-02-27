@@ -3,6 +3,16 @@ package studentManageApp;
 import java.util.Scanner;
 
 public class Main {
+
+    public static double ortalamaHesapla(int[] ogrenciNotlari) {
+        double toplam = 0;
+        for (int not : ogrenciNotlari) {
+            toplam += not;}
+        return toplam / ogrenciNotlari.length;}
+    
+
+
+
     static void main() {
 
         Scanner scanner = new Scanner(System.in);
@@ -42,6 +52,7 @@ public class Main {
             switch (secim){
 
                 case 1 :
+                    double ortalama = ortalamaHesapla(notlar);
                     System.out.println("Ortalama Hesaplanıyor...");
                     break;
                 case 2 :
@@ -58,15 +69,6 @@ public class Main {
                     System.out.println("Geçersiz İşlem! Lütfen Geçerli Bir Seçim Yapınız.");
             }
         }
-
-
-
-
-
-
-
-
-
-
     }
 }
+
