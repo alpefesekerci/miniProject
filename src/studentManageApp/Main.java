@@ -24,7 +24,7 @@ public class Main {
         boolean gecenVarMi = false;
         for (int i = 0; i < notlar.length; i++){
             if (notlar[i] >= 50){
-                System.out.println(isimler[i] + "-> NOT" + notlar[i]);
+                System.out.println(isimler[i] + "-> NOT " + notlar[i]);
                 gecenVarMi = true;
             }
         }
