@@ -35,7 +35,7 @@ public class Main {
 
 
 
-    static void main() {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Kaç Öğrenci Gireceksiniz? ");
